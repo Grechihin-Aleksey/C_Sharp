@@ -1,6 +1,11 @@
-﻿int a = new Random().Next(100, 1001);
+﻿void function (int item) {
+  int itemA = ((item / 10) - (item /10) % 10) + item % 10;
+  Console.WriteLine(itemA);
+}
 
-int b = ((a / 10) - (a /10) % 10) + a % 10;
 
+int a = new Random().Next(100, 1001);
+
+function(a);
 Console.WriteLine(a);
-Console.WriteLine(b);
+// Console.WriteLine(b);
