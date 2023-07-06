@@ -20,14 +20,14 @@
 
 // function();
 
-Console.WriteLine("Введите длину массива N: ");
-int num = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Введите длину массива N: ");
+// int num = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine("Введите диапазон массива, старт: ");
-int n = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Введите диапазон массива, старт: ");
+// int n = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine("Введите диапазон массива, конец: ");
-int m = int.Parse(Console.ReadLine()!);
+// Console.WriteLine("Введите диапазон массива, конец: ");
+// int m = int.Parse(Console.ReadLine()!);
 
 
 void Array(int[] collection)
@@ -54,3 +54,40 @@ int[] array = new int[num];
 
 Array(array);
 PrintArray(array);
+
+
+
+
+
+// int[] array = {5, 6, 7, 8, 1, 2 , 5};
+
+// void PrintArray (int[] array)
+// {
+//   int length = array.Length;
+//   for (int i = 0; i < length; i++)
+//   {
+//     Console.Write (array [i] + " ");
+//   }  
+//   Console.WriteLine ();
+// }
+
+
+
+// void SelectionSort (int[] array)
+// {
+//   for (int i = 0; i < array.Length; i++)
+//   {
+//     int minPosition = i;
+//     for (int j = i + 1; j < array.Length; j++)
+//     {
+//       if (array [j] < array[ minPosition]) minPosition = j;
+//     }
+//     int tempArray = array[i];
+//     array[i] = array [minPosition];
+//     array [minPosition] = tempArray;
+//       Console.Write (array [i] + " ");
+//   }
+// }
+
+// PrintArray (array);
+// SelectionSort (array);
