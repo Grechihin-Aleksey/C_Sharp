@@ -20,41 +20,38 @@
 
 // function();
 
-// Console.WriteLine("Введите длину массива N: ");
-// int num = int.Parse(Console.ReadLine()!);
-
-// Console.WriteLine("Введите диапазон массива, старт: ");
-// int n = int.Parse(Console.ReadLine()!);
-
-// Console.WriteLine("Введите диапазон массива, конец: ");
-// int m = int.Parse(Console.ReadLine()!);
+// 
 
 
-void Array(int[] collection)
+int[] Array(int array1, int a, int b)
 {
-  for (int index = 0; index < collection.Length; index++)
-  {
-    collection[index] = new Random().Next(n, m);
-  }
+  int[] arr = new int[array1];
+  for (int index = 0; index < array1; index++)
+    arr[index] = new Random().Next(a, b + 1);
+  return arr;
 }
 
 void PrintArray(int[] col)
 {
   for (int i = 0; i < col.Length; i++)
-  {
     Console.Write(col[i] + " ");
-  }
 }
 
-int[] array = new int[num];
+Console.WriteLine("Введите длину массива N: ");
+int num = int.Parse(Console.ReadLine()!);
 
-Array(array);
-PrintArray(array);
+Console.WriteLine("Введите диапазон массива, старт: ");
+int n = int.Parse(Console.ReadLine()!);
+
+Console.WriteLine("Введите диапазон массива, конец: ");
+int m = int.Parse(Console.ReadLine()!);
+
+int[] mass = Array(num, n, m);
+PrintArray(mass);
 
 
 
-
-
+//Сортировка массива
 // int[] array = {5, 6, 7, 8, 1, 2 , 5};
 
 // void PrintArray (int[] array)
@@ -87,4 +84,3 @@ PrintArray(array);
 
 // PrintArray (array);
 // SelectionSort (array);
-
