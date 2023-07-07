@@ -48,10 +48,6 @@ void PrintArray(int[] col)
 
 int[] array = new int[num];
 
-
-
-
-
 Array(array);
 PrintArray(array);
 
@@ -91,3 +87,4 @@ PrintArray(array);
 
 // PrintArray (array);
 // SelectionSort (array);
+
