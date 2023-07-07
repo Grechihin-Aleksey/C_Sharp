@@ -17,6 +17,19 @@ void printArray(int[] col)
   for (int i = 0; i < col.Length; i++)
   Console.Write(col[i] + " ");
   Console.WriteLine();
+
+  // Можно реализовать внутри функции printArray
+
+  // int pos, neg;
+  // pos = neg = 0;
+
+  // for (int i = 0; i < col.Length; i++)
+  // {
+  //   if (col[i] >= 0) pos += col[i];
+  //   else neg += col[i];
+  // }
+  // Console.WriteLine($"Сумма положительных чисел : {pos}");
+  // Console.WriteLine($"Сумма Отрицательных чисел : {neg}");
 }
 
 void SumPosNeg (int[] array)
