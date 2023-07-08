@@ -1,4 +1,8 @@
-﻿int[] MassNums (int size, int from, int to)
+﻿// Задайте массив заполненный случайными положительными трёхзначными числами. 
+// Напишите программу, которая покажет количество чётных чисел в массиве.
+// [345, 897, 568, 234] -> 2
+
+int[] MassNums (int size, int from, int to)
 {
  int[] arr = new int[size];
   for (int i = 0; i < arr.Length; i++)
