@@ -1,4 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Задайте двумерный массив размером m×n, 
+// заполненный случайными вещественными числами.
 
 void Print(double[,] arr)
 {
@@ -8,7 +9,7 @@ void Print(double[,] arr)
   for (int i = 0; i < row_size; i++)
   {
     for (int j = 0; j < column_size; j++)
-      Console.Write($" {arr[i, j], 4} ");
+      Console.Write($" {arr[i, j],4} ");
     Console.WriteLine();
   }
   Console.WriteLine();
@@ -21,7 +22,7 @@ double[,] MassNums(int row, int column)
 
   for (int i = 0; i < row; i++)
     for (int j = 0; j < column; j++)
-      arr[i, j] = Math.Round(n_new.NextDouble() * (10-2) - 2, 1);
+      arr[i, j] = Math.Round(n_new.NextDouble() * (10 - 2) - 2, 1);
   return arr;
 }
 
