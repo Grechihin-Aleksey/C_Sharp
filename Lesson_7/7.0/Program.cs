@@ -1,4 +1,7 @@
-﻿void Print(int[,] arr)
+﻿// 1. Задайте двумерный массив размера m на n,
+// каждый элемент в массиве находится по формуле: Aₘₙ = m+n.
+// Выведите полученный массив на экран.
+void Print(int[,] arr)
 {
 int row_size = arr.GetLength(0);
 int column_size = arr.GetLength(1);
